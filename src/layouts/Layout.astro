@@ -1,0 +1,35 @@
+---
+import Header from "./Header.astro";
+import ThemeScript from "./ThemeScript.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="theme-color" content="" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+
+		<ThemeScript />
+		<title>{title}</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	</head>
+	<body
+		class="h-screen flex flex-col px-5 sm:px-16 md:px-28 lg:px-36 xl:px-64 2xl:px-[30rem] max-w-full bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200"
+	>
+		<Header />
+		<main
+			class="flex grow-[14] flex-col items-center justify-center w-full max-w-full"
+		>
+			<slot />
+		</main>
+	</body>
+</html>

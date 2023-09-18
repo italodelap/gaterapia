@@ -1,0 +1,20 @@
+---
+import NavLink from "./NavLink.astro";
+import ThemeToggler from "./ThemeToggler.astro";
+---
+
+<header class="flex grow-[1] flex-col items-center justify-center w-full gap-6">
+  <div class="flex items-center justify-between w-full">
+    <h1 class="text-2xl font-bold uppercase dark:text-neutral-200">
+      Astro + Tailwind
+    </h1>
+    <ThemeToggler />
+  </div>
+  <nav class="w-full">
+    <ul class="flex items-center justify-between w-full list-none">
+      <NavLink label="Home" to="/" />
+      <NavLink label="About" to="/about" />
+      <NavLink label="More info" to="/more-info" />
+    </ul>
+  </nav>
+</header>
