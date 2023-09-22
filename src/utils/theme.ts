@@ -3,7 +3,7 @@ enum TailwindTheme {
   LIGHT_THEME = "light",
 }
 
-export function handleSwitcherChange(): void {
+export function handleTogglerClick(): void {
 	const isDarkThemeSelected = localStorage.getItem("tw-theme") === TailwindTheme.DARK_THEME;
 
 	const htmlTag = document.querySelector("html")!;
