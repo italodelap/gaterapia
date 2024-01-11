@@ -10,7 +10,7 @@ const SERVICES = [
 export function getCompanyServices(): string {
 	let phrase = "";
 	SERVICES.forEach((service, index) => {
-		phrase = index < SERVICES.length ? `${service}, ` : `y ${service}`;
+		phrase += index < SERVICES.length - 1 ? `${service}, ` : `y ${service}`;
 	});
 
 	return phrase;
