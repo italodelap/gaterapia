@@ -29,4 +29,13 @@ const { title } = Astro.props;
 <style is:global>
 	html, body { min-height: 100vh; }
 	html { font-family: "Montserrat Variable", system-ui, sans-serif; }
+
+	body {
+		min-height: theme(minHeight.screen);
+		background: linear-gradient(
+			to top left,
+			theme(colors.neutral.800),
+			theme(colors.cerise-red.600)
+		);
+	}
 </style>
