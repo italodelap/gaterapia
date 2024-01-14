@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+
+import HeroBento from "./HeroBento.astro";
+import HeroBentoItem from "./HeroBentoItem.astro";
+import HeroHello from "./HeroHello.astro";
+
+import photo from "@/assets/images/gaterapia-photo.webp";
+---
+
+<section id="hero" class="md:mt-6">
+  <!-- TODO: reemplazar por logotipo -->
+  <h1
+    class="block md:hidden font-['Caveat_Brush'] text-5xl sm:text-6xl text-white text-center pb-6"
+  >
+    Gaterapia
+  </h1>
+
+  <HeroBento>
+    <HeroHello class="hidden sm-flex" />
+    <HeroBentoItem>
+      <Image src={photo} alt="Foto de Juli, Smoking y Brisa" />
+    </HeroBentoItem>
+    <HeroHello class="flex sm-hidden" />
+  </HeroBento>
+</section>
