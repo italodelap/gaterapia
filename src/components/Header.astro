@@ -1,0 +1,85 @@
+---
+import { Image } from "astro:assets";
+
+import Navbar from "./Navbar.astro";
+
+import { LinksButton } from "./LinksButton";
+---
+
+<header class="w-full sticky top-0 z-50 p-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <div class="flex gap-2 items-center">
+      <Image
+        src="/gaterapia-logo.webp"
+        alt="Gaterapia's logo"
+        width={50}
+        height={50}
+      />
+    </div>
+
+    <!-- Links section for mobile -->
+    <div class="flex sm:hidden text-white">
+      <LinksButton client:visible />
+    </div>
+
+    <!-- Navbar for desktop -->
+    <div class="hidden sm:flex text-white">
+      <Navbar />
+      <div
+        id="navbar-backdrop"
+        class="absolute
+        left-0 top-0
+        bg-black/10 backdrop-blur-lg rounded-lg
+        translate-x-[var(--left)] translate-y-[var(--top)]
+        w-[var(--width)] h-[var(--height)]
+        transition-all duration-500
+        ease-in-out opacity-0 -z-10"
+      >
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  header {
+    animation: blur linear both;
+    animation-timeline: scroll();
+    animation-range: 0 500px;
+  }
+
+  @keyframes blur {
+    to {
+      box-shadow:
+        0px 5px 50px -5px rgba(0, 0, 0, 0.1),
+        0px 0px 0 1px rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+  }
+</style>
+
+<script>
+  const listItem = document.querySelectorAll("header ul li");
+  const navbarBackdrop = document.querySelector(
+    "#navbar-backdrop",
+  ) as HTMLElement;
+
+  listItem.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      const { left, top, width, height } = item.getBoundingClientRect();
+
+      navbarBackdrop.style.setProperty("--left", `${left}px`);
+      navbarBackdrop.style.setProperty("--top", `${top}px`);
+      navbarBackdrop.style.setProperty("--width", `${width}px`);
+      navbarBackdrop.style.setProperty("--height", `${height}px`);
+
+      navbarBackdrop.style.opacity = "1";
+      navbarBackdrop.style.visibility = "visible";
+    });
+
+    item.addEventListener("mouseleave", () => {
+      navbarBackdrop.style.opacity = "0";
+      navbarBackdrop.style.visibility = "hidden";
+    });
+  });
+</script>

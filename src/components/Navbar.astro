@@ -1,0 +1,23 @@
+---
+import NavbarLink from "./NavbarLink.astro";
+
+import CoffeeIcon from "./icons/CoffeeIcon.astro";
+import FacebookLogo from "./icons/FacebookLogo.astro";
+import InstagramLogo from "./icons/InstagramLogo.astro";
+import YoutubeLogo from "./icons/YoutubeLogo.astro";
+---
+
+<ul class="flex">
+  <NavbarLink title="Instagram" href="https://www.instagram.com/gaterapiaok">
+    <InstagramLogo class="size-5" />
+  </NavbarLink>
+  <NavbarLink title="Facebook" href="https://www.facebook.com/gaterapiaok">
+    <FacebookLogo class="size-5" />
+  </NavbarLink>
+  <NavbarLink title="Youtube" href="https://www.youtube.com/@gaterapia1074">
+    <YoutubeLogo class="size-5" />
+  </NavbarLink>
+  <NavbarLink title="Cafecito" href="/">
+    <CoffeeIcon class="size-5" />
+  </NavbarLink>
+</ul>
