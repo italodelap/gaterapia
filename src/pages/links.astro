@@ -1,0 +1,24 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import { api } from "@/lib/api";
+
+const links = await api.links.getAll();
+---
+
+<Layout title="Links de Gaterapia">
+  <header class="pt-14 font-bold text-white">
+    Foto
+    <br />
+    Nombre
+    <br />
+    Descripción
+    <br />
+    Links útiles
+  </header>
+  <main class="pt-14 font-bold text-white">
+    Links extraídos del Google Sheet
+    {JSON.stringify(links, null, 2)}
+  </main>
+  <footer class="pt-14 font-bold text-white">Redes sociales</footer>
+</Layout>
