@@ -1,30 +1,21 @@
 ---
-import { Image } from "astro:assets";
-
 import Layout from "@/layouts/Layout.astro";
 
-import photo from "@/assets/images/gaterapia-photo.webp";
+import Header from "@/components/Header.astro";
+import HeroSection from "@/components/sections/hero/HeroSection.astro";
+import MediaSection from "@/components/sections/media/MediaSection.astro";
+import ReviewsSection from "@/components/sections/reviews/ReviewsSection.astro";
+import ServicesSection from "@/components/sections/services/ServicesSection.astro";
 ---
 
 <Layout title="Gaterapia">
-	<main class="min-h-screen bg-cerise-red-600 px-4 py-2">
-		<header class="flex items-center gap-2">
-			<Image
-				src="/gaterapia-logo.webp"
-				alt="Gaterapia's logo"
-				width={50}
-				height={50}
-			/>
-			<h1 class="font-['Caveat_Brush'] text-4xl text-white">Gaterapia</h1>
-		</header>
-		<Image
-			src={photo}
-			width={400}
-			class="my-4 rounded-2xl"
-			alt="Foto de Juli, Smoking y Brisa"
-		/>
-		<h2 class="text-lg font-bold leading-snug text-white">
-			Estamos trabajando en esta página web. Vuelva prontos 😁
-		</h2>
+	<Header />
+	<main
+		class="max-w-7xl mx-auto px-4 min-[1350px]:px-0 pb-16 flex flex-col gap-16"
+	>
+		<HeroSection />
+		<ServicesSection />
+		<MediaSection />
+		<ReviewsSection />
 	</main>
 </Layout>
