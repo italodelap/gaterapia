@@ -1,7 +1,7 @@
 ---
+import Hello from "./hello/Hello.astro";
 import HeroBento from "./HeroBento.astro";
 import HeroBentoItem from "./HeroBentoItem.astro";
-import HeroHello from "./HeroHello.astro";
 ---
 
 <section id="hero" class="md:mt-6">
@@ -13,10 +13,10 @@ import HeroHello from "./HeroHello.astro";
   </h1>
 
   <HeroBento>
-    <HeroHello class="hidden sm-flex" />
+    <Hello class="hidden sm-flex" />
     <HeroBentoItem>
       <img src="/hero-photo.webp" alt="Foto de Juli, Smoking y Brisa" />
     </HeroBentoItem>
-    <HeroHello class="flex sm-hidden" />
+    <Hello class="flex sm-hidden" />
   </HeroBento>
 </section>
