@@ -1,7 +1,8 @@
 ---
-import { Avatar } from "@nextui-org/react";
-
 import HeroBentoItem from "../HeroBentoItem.astro";
+
+import HelloTitle from "./HelloTitle.astro";
+import HelloDescription from "./HelloDescription.astro";
 
 interface Props {
   class?: string;
@@ -18,39 +19,11 @@ const { class: className } = Astro.props;
   <div
     class="absolute inset-0 p-4 min-[400px]:p-5 flex flex-col gap-4 min-[400px]:gap-5 text-white"
   >
+    <!-- Logo -->
     <h1 class="hidden md:block font-['Caveat_Brush'] text-7xl text-white">
       Gaterapia
     </h1>
-    <div class="flex items-center gap-2 min-[400px]:gap-4">
-      <Avatar showFallback />
-      <h2 class="text-base font-semibold min-[400px]:text-xl">
-        Hola! Soy Juli
-        <span class="inline-block align-middle">
-          <img
-            class="size-7 min-[400px]:size-8"
-            src="/woman_raising_hand-emoji.webp"
-            alt="Emoji de una mujer levantando la mano"
-          />
-        </span>
-      </h2>
-    </div>
-    <div
-      class="flex flex-col gap-4 text-base min-[400px]:text-lg font-medium text-pretty"
-    >
-      <p>
-        Nos especializamos en comportamiento felino, catsitting, terapia floral,
-        reiki, registros akáshicos y comunicación telepática con animales.
-      </p>
-      <p>
-        Espero que te podamos ayudar
-        <span class="inline-block align-middle">
-          <img
-            class="size-6"
-            src="/hugging_face-emoji.webp"
-            alt="Emoji de una carita con los brazos abiertos, como si abrazara"
-          />
-        </span>
-      </p>
-    </div>
+    <HelloTitle />
+    <HelloDescription />
   </div>
 </HeroBentoItem>
