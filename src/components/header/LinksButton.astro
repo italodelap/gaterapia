@@ -1,0 +1,26 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<a
+  href="/links"
+  class={`
+    ${className}
+    flex px-5 py-2.5 items-center transition-all
+    text-white font-medium text-sm text-center
+    rounded-full border border-gray-600
+    bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-700
+  `}
+>
+  <img
+    aria-hidden="true"
+    class="size-3.5 me-2"
+    src="/link-emoji.webp"
+    alt="Emoji de dos eslabones de una cadena de plata"
+  />
+  Mis links
+</a>

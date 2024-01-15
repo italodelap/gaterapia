@@ -1,7 +1,7 @@
 ---
 import Navbar from "./Navbar.astro";
 
-import { LinksButton } from "./LinksButton";
+import LinksButton from "./LinksButton.astro";
 ---
 
 <header class="w-full sticky top-0 z-50 p-4">
@@ -9,20 +9,20 @@ import { LinksButton } from "./LinksButton";
     <div class="flex gap-2 items-center">
       <a
         href="/"
+        aria-roledescription="button"
         class="rounded-full transition-all hover:shadow-lg hover:scale-125"
       >
         <img
           class="size-12"
+          aria-hidden="true"
+          alt="Logo de Gaterapia"
           src="/gaterapia-logo.webp"
-          alt="Gaterapia's logo"
         />
       </a>
     </div>
 
     <!-- Links section for mobile -->
-    <div class="flex sm:hidden text-white">
-      <LinksButton client:visible />
-    </div>
+    <LinksButton class="flex sm:hidden" />
 
     <!-- Navbar for desktop -->
     <div class="hidden sm:flex text-white">
