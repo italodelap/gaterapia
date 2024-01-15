@@ -1,11 +1,7 @@
 ---
-import { Image } from "astro:assets";
-
 import HeroBento from "./HeroBento.astro";
 import HeroBentoItem from "./HeroBentoItem.astro";
 import HeroHello from "./HeroHello.astro";
-
-import photo from "@/assets/images/gaterapia-photo.webp";
 ---
 
 <section id="hero" class="md:mt-6">
@@ -19,7 +15,7 @@ import photo from "@/assets/images/gaterapia-photo.webp";
   <HeroBento>
     <HeroHello class="hidden sm-flex" />
     <HeroBentoItem>
-      <Image src={photo} alt="Foto de Juli, Smoking y Brisa" />
+      <img src="/hero-photo.webp" alt="Foto de Juli, Smoking y Brisa" />
     </HeroBentoItem>
     <HeroHello class="flex sm-hidden" />
   </HeroBento>
