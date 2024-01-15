@@ -1,10 +1,13 @@
 ---
-const { class: className, ...restOfProps } = Astro.props;
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
 ---
 
 <article
-  class={`${className} col-span-10 sm:col-span-5 rounded-xl border border-black/10 overflow-hidden`}
-  {...restOfProps}
+  class={`col-span-10 sm:col-span-5 rounded-xl border border-black/10 overflow-hidden ${className}`}
 >
   <slot />
 </article>
