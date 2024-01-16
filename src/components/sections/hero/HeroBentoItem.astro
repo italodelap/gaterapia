@@ -7,7 +7,9 @@ const { class: className } = Astro.props;
 ---
 
 <article
-  class={`col-span-10 sm:col-span-5 rounded-xl border border-black/10 overflow-hidden ${className}`}
+  class={`col-span-10 sm:col-span-5 rounded-xl border border-black/10 overflow-hidden ${
+    className ?? ""
+  }`}
 >
   <slot />
 </article>

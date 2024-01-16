@@ -11,7 +11,7 @@ interface Props {
 const { class: className } = Astro.props;
 ---
 
-<HeroBentoItem class=`relative ${className}`>
+<HeroBentoItem class=`relative ${className ?? ""}`>
   <div
     class="absolute inset-0 opacity-20 bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600"
   >
@@ -19,7 +19,6 @@ const { class: className } = Astro.props;
   <div
     class="absolute inset-0 p-4 min-[400px]:p-5 flex flex-col gap-4 min-[400px]:gap-5 text-white"
   >
-    <!-- Logo -->
     <h1 class="hidden md:block font-['Caveat_Brush'] text-7xl text-white">
       Gaterapia
     </h1>

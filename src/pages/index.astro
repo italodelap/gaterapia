@@ -1,7 +1,9 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 
+import Section from "@/components/Section.astro";
 import Header from "@/components/header/Header.astro";
+
 import HeroSection from "@/components/sections/hero/HeroSection.astro";
 import MediaSection from "@/components/sections/media/MediaSection.astro";
 import ReviewsSection from "@/components/sections/reviews/ReviewsSection.astro";
@@ -11,9 +13,17 @@ import ServicesSection from "@/components/sections/services/ServicesSection.astr
 <Layout title="Gaterapia">
 	<Header />
 	<main class="w-full px-4 pb-16 flex flex-col gap-16">
-		<HeroSection class="mx-auto max-w-6xl" />
-		<ServicesSection class="mx-auto max-w-6xl" />
-		<MediaSection class="mx-auto max-w-6xl" />
-		<ReviewsSection class="mx-auto max-w-6xl" />
+		<Section id="hero" class="md:mt-6">
+			<HeroSection />
+		</Section>
+		<Section id="servicios">
+			<ServicesSection />
+		</Section>
+		<Section id="medios">
+			<MediaSection />
+		</Section>
+		<Section id="opiniones">
+			<ReviewsSection />
+		</Section>
 	</main>
 </Layout>

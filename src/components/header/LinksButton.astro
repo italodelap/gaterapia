@@ -9,7 +9,7 @@ const { class: className } = Astro.props;
 <a
   href="/links"
   class={`
-    ${className}
+    ${className ?? ""}
     flex px-5 py-2.5 items-center transition-all
     text-white font-medium text-sm text-center
     rounded-full border border-gray-600
