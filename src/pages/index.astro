@@ -3,27 +3,26 @@ import Layout from "@/layouts/Layout.astro";
 
 import Section from "@/components/Section.astro";
 import Header from "@/components/header/Header.astro";
-
-import HeroSection from "@/components/sections/hero/HeroSection.astro";
-import MediaSection from "@/components/sections/media/MediaSection.astro";
-import ReviewsSection from "@/components/sections/reviews/ReviewsSection.astro";
-import ServicesSection from "@/components/sections/services/ServicesSection.astro";
+import Hero from "@/components/sections/hero/Hero.astro";
+import Media from "@/components/sections/media/Media.astro";
+import Reviews from "@/components/sections/reviews/Reviews.astro";
+import Services from "@/components/sections/services/Services.astro";
 ---
 
 <Layout title="Gaterapia">
 	<Header />
 	<main class="w-full px-4 pb-16 flex flex-col gap-16">
 		<Section id="hero" class="md:mt-6">
-			<HeroSection />
+			<Hero />
 		</Section>
 		<Section id="servicios">
-			<ServicesSection />
+			<Services />
 		</Section>
 		<Section id="medios">
-			<MediaSection />
+			<Media />
 		</Section>
 		<Section id="opiniones">
-			<ReviewsSection />
+			<Reviews />
 		</Section>
 	</main>
 </Layout>
