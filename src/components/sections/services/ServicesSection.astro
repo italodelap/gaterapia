@@ -1,1 +1,11 @@
-<section id="servicios"><h3 class="text-2xl text-white">Servicios</h3></section>
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className, ...restOfProps } = Astro.props;
+---
+
+<section id="servicios" class={className} {...restOfProps}>
+  <h3 class="text-2xl text-white">Servicios</h3>
+</section>

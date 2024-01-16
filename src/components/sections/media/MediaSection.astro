@@ -1,3 +1,11 @@
-<section id="medios">
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className, ...restOfProps } = Astro.props;
+---
+
+<section id="medios" class={className} {...restOfProps}>
   <h3 class="text-2xl text-white">Gaterapia en los medios</h3>
 </section>
