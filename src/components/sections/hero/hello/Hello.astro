@@ -13,15 +13,26 @@ const { class: className } = Astro.props;
 
 <HeroBentoItem class=`relative ${className ?? ""}`>
   <div
-    class="absolute inset-0 opacity-20 bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600"
+    class={`
+      absolute inset-0 opacity-20
+      bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600
+    `}
   >
   </div>
+
   <div
-    class="absolute inset-0 p-4 min-[400px]:p-5 flex flex-col gap-4 min-[400px]:gap-5 text-white"
+    class={`
+      absolute inset-0 p-4 min-[400px]:p-5 lg:p-8
+      flex flex-col justify-center sm:justify-start
+      gap-4 min-[400px]:gap-5
+      text-white
+    `}
   >
-    <h1 class="hidden md:block font-['Caveat_Brush'] text-7xl text-white">
-      Gaterapia
-    </h1>
+    <img
+      src="/gaterapia-logo.png"
+      alt="Logotipo de Gaterapia"
+      class="hidden md:block w-80 self-center mt-6 lg:mt-2"
+    />
     <HelloTitle />
     <HelloDescription />
   </div>
