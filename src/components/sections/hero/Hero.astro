@@ -11,8 +11,12 @@ import HeroBentoItem from "./HeroBentoItem.astro";
 />
 <HeroBento>
   <Hello class="hidden sm:flex md:col-span-4 lg:col-span-5" />
-  <HeroBentoItem class="md:col-span-6 lg:col-span-5">
-    <img src="/hero-photo.webp" alt="Foto de Juli, Smoking y Brisa" />
+  <HeroBentoItem class="md:col-span-6 lg:col-span-5 grid place-items-center">
+    <img
+      class="h-full"
+      src="/hero-photo.webp"
+      alt="Foto de Juli, Smoking y Brisa"
+    />
   </HeroBentoItem>
   <Hello class="flex sm:hidden" />
 </HeroBento>

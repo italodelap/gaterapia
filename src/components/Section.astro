@@ -7,6 +7,6 @@ interface Props {
 const { class: className, id, ...rest } = Astro.props;
 ---
 
-<section id={id} class={`mx-auto max-w-6xl ${className ?? ""}`} {...rest}>
+<section id={id} class={`w-full max-w-6xl mx-auto ${className ?? ""}`} {...rest}>
   <slot />
 </section>
