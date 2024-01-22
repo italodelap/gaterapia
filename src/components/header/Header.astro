@@ -9,8 +9,10 @@ import LinksButton from "./LinksButton.astro";
     <div class="flex gap-2 items-center">
       <a
         href="/"
+        aria-labelledby="logo-link-label"
         class="rounded-full transition-all hover:shadow-lg hover:scale-125"
       >
+        <span id="logo-link-label" class="hidden">Volver al inicio</span>
         <img
           class="size-12"
           aria-hidden="true"

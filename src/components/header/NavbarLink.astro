@@ -1,18 +1,19 @@
 ---
 interface Props {
   href: string;
-  title?: string;
+  label: string;
 }
 
-const { href, title = "" } = Astro.props;
+const { href, label } = Astro.props;
 ---
 
 <li>
   <a
     href={href}
-    title={title}
+    aria-labelledby={label}
     class="transition-colors duration-500 inline-block px-2 py-2 align-middle"
   >
+    <span id={label} class="hidden">{label}</span>
     <slot />
   </a>
 </li>
