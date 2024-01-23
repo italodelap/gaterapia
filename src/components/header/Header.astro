@@ -30,13 +30,14 @@ import LinksButton from "./LinksButton.astro";
       <Navbar />
       <div
         id="navbar-backdrop"
-        class="absolute
-        left-0 top-0
-        bg-black/10 backdrop-blur-lg rounded-lg
-        translate-x-[var(--left)] translate-y-[var(--top)]
-        w-[var(--width)] h-[var(--height)]
-        transition-all duration-500
-        ease-in-out opacity-0 -z-10"
+        class={`
+          absolute left-0 top-0
+          ease-in-out opacity-0 -z-10
+          transition-all duration-500
+          w-[var(--width)] h-[var(--height)]
+          bg-black/10 backdrop-blur-lg rounded-lg
+          translate-x-[var(--left)] translate-y-[var(--top)]
+        `}
       >
       </div>
     </div>
