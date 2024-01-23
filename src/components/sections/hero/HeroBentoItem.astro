@@ -7,9 +7,11 @@ const { class: className } = Astro.props;
 ---
 
 <article
-  class={`col-span-10 sm:col-span-5 rounded-xl border border-black/10 overflow-hidden ${
-    className ?? ""
-  }`}
+  class={`
+    rounded-3xl border border-black/10 overflow-hidden
+    col-span-10 sm:col-span-5
+    ${className ?? ""}
+  `}
 >
   <slot />
 </article>
