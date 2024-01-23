@@ -4,16 +4,32 @@ import NavbarLink from "./NavbarLink.astro";
 import EmailIcon from "./icons/EmailIcon.astro";
 import FacebookLogo from "./icons/FacebookLogo.astro";
 import InstagramLogo from "./icons/InstagramLogo.astro";
+
+const SOCIAL_LINKS = [
+  {
+    Icon: EmailIcon,
+    label: "E-mail",
+    href: "mailto:gaterapia.catsitters@gmail.com",
+  },
+  {
+    Icon: InstagramLogo,
+    label: "Instagram",
+    href: "https://www.instagram.com/gaterapiaok",
+  },
+  {
+    Icon: FacebookLogo,
+    label: "Facebook",
+    href: "https://www.facebook.com/gaterapiaok",
+  },
+];
 ---
 
 <ul class="flex">
-  <NavbarLink label="E-mail" href="mailto:gaterapia.catsitters@gmail.com">
-    <EmailIcon class="size-5" />
-  </NavbarLink>
-  <NavbarLink label="Instagram" href="https://www.instagram.com/gaterapiaok">
-    <InstagramLogo class="size-5" />
-  </NavbarLink>
-  <NavbarLink label="Facebook" href="https://www.facebook.com/gaterapiaok">
-    <FacebookLogo class="size-5" />
-  </NavbarLink>
+  {
+    SOCIAL_LINKS.map(({ label, href, Icon }) => (
+      <NavbarLink label={label} href={href}>
+        <Icon class="size-5" />
+      </NavbarLink>
+    ))
+  }
 </ul>
