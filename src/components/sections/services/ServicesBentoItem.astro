@@ -1,0 +1,52 @@
+---
+import { LinkButton } from "./LinkButton.tsx";
+
+interface Props {
+  class?: string;
+  img: string;
+  subtitle?: string;
+  title: string;
+  url: string;
+}
+
+const { class: className, img, title, url, subtitle } = Astro.props;
+---
+
+<article
+  class={`
+    flex flex-col items-center gap-2
+    justify-center md:justify-between
+    px-4 py-14 rounded-3xl border border-black/10
+    group relative text-white overflow-hidden
+    col-span-12 min-[375px]:col-span-6 sm:col-span-4
+    ${className ?? ""}
+  `}
+>
+  <img
+    src={img}
+    alt={`Foto del servicio de '${img.split("/").pop()}'`}
+    class={`
+      w-full h-full object-cover
+      absolute inset-0 opacity-60
+      transition-all group-hover:scale-110
+    `}
+  />
+  <div class="flex flex-col items-center justify-center">
+    <h4
+      class={`
+        z-[1] text-center font-bold leading-5
+        text-lg min-[500px]:text-xl md:text-2xl xl:text-3xl
+      `}
+    >
+      {title}
+    </h4>
+    {
+      subtitle && (
+        <small class="z-[1] text-sm min-[500px]:text-lg md:text-xl font-medium">
+          {subtitle}
+        </small>
+      )
+    }
+  </div>
+  <LinkButton href={url} className="z-[1]" client:visible>Saber más</LinkButton>
+</article>
