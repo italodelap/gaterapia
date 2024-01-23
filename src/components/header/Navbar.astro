@@ -1,11 +1,9 @@
 ---
 import NavbarLink from "./NavbarLink.astro";
 
-import CoffeeIcon from "./CoffeeIcon.astro";
-import EmailIcon from "./EmailIcon.astro";
-import FacebookLogo from "./FacebookLogo.astro";
-import InstagramLogo from "./InstagramLogo.astro";
-import YoutubeLogo from "./YoutubeLogo.astro";
+import EmailIcon from "./icons/EmailIcon.astro";
+import FacebookLogo from "./icons/FacebookLogo.astro";
+import InstagramLogo from "./icons/InstagramLogo.astro";
 ---
 
 <ul class="flex">
@@ -17,11 +15,5 @@ import YoutubeLogo from "./YoutubeLogo.astro";
   </NavbarLink>
   <NavbarLink label="Facebook" href="https://www.facebook.com/gaterapiaok">
     <FacebookLogo class="size-5" />
-  </NavbarLink>
-  <NavbarLink label="Youtube" href="https://www.youtube.com/@gaterapia1074">
-    <YoutubeLogo class="size-5" />
-  </NavbarLink>
-  <NavbarLink label="Cafecito" href="/">
-    <CoffeeIcon class="size-5" />
   </NavbarLink>
 </ul>
