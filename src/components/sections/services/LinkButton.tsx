@@ -23,7 +23,7 @@ export function LinkButton({
 				font-semibold
 				md:h-12 md:px-6 md:text-base
 				border-white text-white uppercase
-				lg:opacity-0 lg:group-hover:opacity-100
+				lg:opacity-0 lg:group-hover:opacity-100 focus:opacity-100
 				hover:!opacity-100 hover:border-cerise-red-600 hover:!bg-cerise-red-600
 			`}
 		>
