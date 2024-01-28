@@ -7,13 +7,11 @@ interface Props {
 const { href, label } = Astro.props;
 ---
 
-<li class="grid place-items-center">
-  <a
-    href={href}
-    aria-labelledby={label}
-    class="transition-colors duration-500 inline-block px-3 py-3 align-middle"
-  >
-    <span id={label} class="hidden">{label}</span>
-    <slot />
-  </a>
-</li>
+<a
+  href={href}
+  aria-labelledby={label}
+  class="group grid place-items-center transition-all duration-500 px-3 py-3"
+>
+  <span id={label} class="hidden">{label}</span>
+  <slot />
+</a>

@@ -1,4 +1,4 @@
-const listItem = document.querySelectorAll("header ul li");
+const listItem = document.querySelectorAll("header nav a");
 const navbarBackdrop = document.querySelector("#navbar-backdrop") as HTMLElement;
 
 listItem.forEach((item) => {

@@ -24,15 +24,15 @@ const SOCIAL_LINKS = [
 ];
 ---
 
-<ul class="flex">
+<nav class="flex">
   {
     SOCIAL_LINKS.map(({ label, href, Icon }) => (
       <NavbarLink label={label} href={href}>
-        <Icon class="size-5" />
+        <Icon class="size-5 transition-all group-hover:drop-shadow-[0px_0px_3px_#FFFFFF]" />
       </NavbarLink>
     ))
   }
-</ul>
+</nav>
 <div
   id="navbar-backdrop"
   class={`
