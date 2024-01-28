@@ -1,0 +1,20 @@
+---
+interface Props {
+  href: string;
+  label: string;
+}
+
+const { href, label } = Astro.props;
+---
+
+<a
+  href={href}
+  aria-labelledby={label}
+  class={`
+    grid place-items-center p-2 rounded-xl
+    transition-all hover:scale-110 hover:bg-black/10 focus:bg-black/10
+  `}
+>
+  <span id={label} class="hidden">{label}</span>
+  <slot />
+</a>

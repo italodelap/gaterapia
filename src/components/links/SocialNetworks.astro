@@ -1,0 +1,41 @@
+---
+import SocialNetworkLink from "./SocialNetworkLink.astro";
+
+import EmailIcon from "../icons/EmailIcon.astro";
+import FacebookLogo from "../icons/FacebookLogo.astro";
+import InstagramLogo from "../icons/InstagramLogo.astro";
+import YoutubeLogo from "../icons/YoutubeLogo.astro";
+
+const SOCIAL_NETWORKS = [
+  {
+    Icon: EmailIcon,
+    label: "E-mail",
+    href: "mailto:gaterapia.catsitters@gmail.com",
+  },
+  {
+    Icon: InstagramLogo,
+    label: "Instagram",
+    href: "https://www.instagram.com/gaterapiaok",
+  },
+  {
+    Icon: FacebookLogo,
+    label: "Facebook",
+    href: "https://www.facebook.com/gaterapiaok",
+  },
+  {
+    Icon: YoutubeLogo,
+    label: "Youtube",
+    href: "https://www.youtube.com/@gaterapia1074",
+  },
+];
+---
+
+<nav class="flex gap-3 text-white">
+  {
+    SOCIAL_NETWORKS.map(({ label, href, Icon }) => (
+      <SocialNetworkLink label={label} href={href}>
+        <Icon class="size-8" />
+      </SocialNetworkLink>
+    ))
+  }
+</nav>
