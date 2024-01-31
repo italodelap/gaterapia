@@ -30,11 +30,11 @@ const SOCIAL_NETWORKS = [
 ];
 ---
 
-<nav class="flex gap-3 text-white">
+<nav class="flex gap-5 text-white">
   {
     SOCIAL_NETWORKS.map(({ label, href, Icon }) => (
       <SocialNetworkLink label={label} href={href}>
-        <Icon class="size-8 transition-all group-hover:drop-shadow-[0px_0px_3px_#FFFFFF]" />
+        <Icon class="size-10 transition-all group-hover:drop-shadow-[0px_0px_3px_#FFFFFF]" />
       </SocialNetworkLink>
     ))
   }

@@ -11,8 +11,8 @@ const { href, label } = Astro.props;
   href={href}
   aria-labelledby={label}
   class={`
-    group grid place-items-center p-2 rounded-xl
-    transition-all hover:scale-105 hover:bg-black/10 focus:bg-black/10
+    group grid place-items-center rounded-xl
+    transition-all hover:scale-125 focus:scale-125
   `}
 >
   <span id={label} class="hidden">{label}</span>
