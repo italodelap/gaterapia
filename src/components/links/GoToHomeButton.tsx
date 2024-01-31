@@ -1,5 +1,7 @@
 import { Button, Link } from "@nextui-org/react";
 
+import { HomeIcon } from "./HomeIcon";
+
 export function GoToHomeButton({ className }: { className?: string }) {
 	return (
 		<Button
@@ -7,6 +9,7 @@ export function GoToHomeButton({ className }: { className?: string }) {
 			as={Link}
 			radius="sm"
 			variant="ghost"
+			startContent={<HomeIcon className="size-5" />}
 			className={`
 				${className ?? ""}
         border-white text-white
