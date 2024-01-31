@@ -14,7 +14,7 @@ export function GoToHomeButton({ className }: { className?: string }) {
         hover:border-cerise-red-600 hover:!bg-cerise-red-600
 			`}
 		>
-			Ir a Gaterapia
+			Ir al Inicio
 		</Button>
 	);
 }
