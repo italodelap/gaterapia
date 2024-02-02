@@ -4,7 +4,7 @@ export const api = {
 	links: {
 		async getAll(): Promise<Link[]> {
 			const csv = await fetch(
-				"https://docs.google.com/spreadsheets/d/e/2PACX-1vRvSiNUT8d0BcHO7uJ9gKKRQ0TNx0OAStlJy39gKWyByCwfU1yB92u-jtilOcO906QYZhQcblSi94Su/pub?output=csv",
+				"https://docs.google.com/spreadsheets/d/e/2PACX-1vTERcp_hbkB3Ww-OzdjfVvUDDojYjT-LlqI1ZY5FcYtYTGMAi4zKOGPrgjpVk0psEBe4xlggAqq1qVJ/pub?output=csv",
 			).then((response) => response.text());
 
 			const links = csv
