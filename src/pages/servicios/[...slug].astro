@@ -20,5 +20,7 @@ const { Content } = await service.render();
   <h1 class="font-['Caveat_Brush'] text-white text-5xl text-center py-12">
     {service.data.title}
   </h1>
-  <Content />
+  <main class="prose prose-invert">
+    <Content />
+  </main>
 </Layout>

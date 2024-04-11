@@ -27,6 +27,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.12",
     "@typescript-eslint/eslint-plugin": "^6.18.1",
     "eslint": "^8.56.0",
     "eslint-config-codely": "^3.1.3",
