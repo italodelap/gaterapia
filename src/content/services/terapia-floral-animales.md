@@ -1,6 +1,4 @@
 ---
-title: "Terapia floral para animales"
-heroImage: "/services/terapia-floral-animales.webp"
+title: "Terapia floral"
+subtitle: "(animales)"
 ---
-
-

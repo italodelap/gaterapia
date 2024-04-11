@@ -1,6 +1,4 @@
 ---
-title: "Terapia floral para personas"
-heroImage: "/services/terapia-floral-personas.webp"
+title: "Terapia floral"
+subtitle: "(personas)"
 ---
-
-
