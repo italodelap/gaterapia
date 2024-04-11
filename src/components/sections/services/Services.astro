@@ -7,11 +7,6 @@ import ServicesBentoItem from "./ServicesBentoItem.astro";
 const services = await getFormattedServices();
 ---
 
-<h3
-  class="font-['Caveat_Brush'] text-white text-5xl lg:text-6xl text-center mb-8 lg:mb-10"
->
-  Servicios
-</h3>
 <ServicesBento>
   {services.map((service) => <ServicesBentoItem {...service} />)}
 </ServicesBento>

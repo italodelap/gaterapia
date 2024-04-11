@@ -2,6 +2,8 @@
 import "@fontsource/caveat-brush";
 import "@fontsource-variable/montserrat";
 
+import { ViewTransitions } from "astro:transitions";
+
 import Header from "@/components/header/Header.astro";
 import Footer from "@/components/footer/Footer.astro";
 
@@ -24,11 +26,12 @@ const { title } = Astro.props;
 		<meta name="description" content={getServicesDescriptionForSeo()} />
 		<link rel="icon" type="image/webp" href="/gaterapia-isotype.webp" />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 		<Header />
 		<slot />
-		<Footer class="pt-24" />
+		<Footer />
 	</body>
 </html>
 
