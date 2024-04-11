@@ -5,7 +5,7 @@ import "@fontsource-variable/montserrat";
 import Footer from "@/components/footer/Footer.astro";
 import LinksHeader from "@/components/links/LinksHeader.astro";
 
-import { getCompanyServices } from "@/lib/data";
+import { getServicesDescriptionForSeo } from "@/lib/data";
 
 interface Props {
 	title: string;
@@ -21,7 +21,7 @@ const { title } = Astro.props;
 		<meta name="theme-color" content="#E1306C" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content={getCompanyServices()} />
+		<meta name="description" content={getServicesDescriptionForSeo()} />
 		<link rel="icon" type="image/webp" href="/gaterapia-isotype.webp" />
 		<title>{title}</title>
 	</head>

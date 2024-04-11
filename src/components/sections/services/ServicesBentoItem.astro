@@ -3,13 +3,12 @@ import { LinkButton } from "./LinkButton.tsx";
 
 interface Props {
   class?: string;
-  img: string;
+  slug: string;
   subtitle?: string;
   title: string;
-  url: string;
 }
 
-const { class: className, img, title, url, subtitle } = Astro.props;
+const { class: className, slug, title, subtitle } = Astro.props;
 ---
 
 <article
@@ -23,8 +22,8 @@ const { class: className, img, title, url, subtitle } = Astro.props;
   `}
 >
   <img
-    src={img}
-    alt={`Foto del servicio de '${img.split("/").pop()}'`}
+    src={`/services/${slug}.webp`}
+    alt={`Foto del servicio de '${title}${subtitle ? ` ${subtitle}` : ""}'`}
     class={`
       w-full h-full object-cover
       absolute inset-0 opacity-60
@@ -49,5 +48,7 @@ const { class: className, img, title, url, subtitle } = Astro.props;
       )
     }
   </div>
-  <LinkButton href={url} className="z-[1]" client:visible>Saber más</LinkButton>
+  <LinkButton href={`/servicios/${slug}`} className="z-[1]" client:visible>
+    Saber más
+  </LinkButton>
 </article>

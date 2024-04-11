@@ -1,8 +1,10 @@
 ---
-import { SERVICES } from "./services";
+import { getFormattedServices } from "@/lib/data";
 
 import ServicesBento from "./ServicesBento.astro";
 import ServicesBentoItem from "./ServicesBentoItem.astro";
+
+const services = await getFormattedServices();
 ---
 
 <h3
@@ -11,5 +13,5 @@ import ServicesBentoItem from "./ServicesBentoItem.astro";
   Servicios
 </h3>
 <ServicesBento>
-  {SERVICES.map((service) => <ServicesBentoItem {...service} />)}
+  {services.map((service) => <ServicesBentoItem {...service} />)}
 </ServicesBento>
