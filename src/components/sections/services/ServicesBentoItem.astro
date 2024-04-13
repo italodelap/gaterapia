@@ -13,10 +13,10 @@ const { class: className, slug, title, subtitle } = Astro.props;
 
 <article
   class={`
+    rounded-3xl border border-black/10
     group relative text-white overflow-hidden
     flex flex-col items-center gap-2 justify-between
     col-span-12 min-[375px]:col-span-6 sm:col-span-4
-    px-4 py-4 md:py-14 rounded-3xl border border-black/10
     ${className ?? ""}
   `}
 >
@@ -30,7 +30,9 @@ const { class: className, slug, title, subtitle } = Astro.props;
       transition-all group-hover:scale-110
     `}
   />
-  <div class="flex flex-col items-center justify-center">
+  <div
+    class="flex flex-col items-center justify-center px-4 pt-4 md:pt-8 lg:pt-14"
+  >
     <h4
       class={`
         z-[1] text-center font-bold leading-5
@@ -47,5 +49,14 @@ const { class: className, slug, title, subtitle } = Astro.props;
       )
     }
   </div>
-  <ServiceButton href={`/servicios/${slug}`} />
+  <div
+    class={`
+      backdrop-blur-sm md:backdrop-blur-none
+      flex justify-end w-full md:justify-center
+      px-2 py-2 md:px-4 md:pt-0 md:pb-8 lg:pb-14
+      border-t-1 border-white/20 md:border-t-0
+    `}
+  >
+    <ServiceButton href={`/servicios/${slug}`} />
+  </div>
 </article>

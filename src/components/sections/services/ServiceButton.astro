@@ -11,16 +11,17 @@ const { href } = Astro.props;
 <a
   href={href}
   class={`
+    px-2 md:pl-6 md:pr-5 py-1 md:h-12
     z-[1] backdrop-blur-md transition-all
-    pl-2 pr-1 md:pl-6 md:pr-5 py-1 md:h-12
-    border-1 md:border-2 border-white rounded-lg
     flex justify-center items-center gap-1 md:gap-2
-    lg:opacity-0 lg:group-hover:opacity-100 focus:opacity-100
+    text-xs uppercase text-white font-semibold md:text-base
+    md:opacity-0 md:group-hover:opacity-100 focus:opacity-100
     active:border-cerise-red-700 active:bg-cerise-red-700
-    text-xs uppercase text-white font-medium md:font-semibold md:text-base
+    border-cerise-red-600 bg-cerise-red-600 md:bg-transparent
+    border-1 md:border-2 md:border-white rounded-xl md:rounded-lg
     hover:opacity-100 hover:border-cerise-red-600 hover:bg-cerise-red-600
   `}
 >
   Saber más
-  <ArrowIcon class="size-6 md:size-7" />
+  <ArrowIcon class="hidden size-6 md:block md:size-7" />
 </a>
