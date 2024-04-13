@@ -1,5 +1,5 @@
 ---
-import { LinkButton } from "./LinkButton.tsx";
+import ServiceButton from "./ServiceButton.astro";
 
 interface Props {
   class?: string;
@@ -13,11 +13,10 @@ const { class: className, slug, title, subtitle } = Astro.props;
 
 <article
   class={`
-    flex flex-col items-center gap-2
-    justify-center md:justify-between
-    px-4 py-14 rounded-3xl border border-black/10
     group relative text-white overflow-hidden
+    flex flex-col items-center gap-2 justify-between
     col-span-12 min-[375px]:col-span-6 sm:col-span-4
+    px-4 py-4 md:py-14 rounded-3xl border border-black/10
     ${className ?? ""}
   `}
 >
@@ -48,7 +47,5 @@ const { class: className, slug, title, subtitle } = Astro.props;
       )
     }
   </div>
-  <LinkButton href={`/servicios/${slug}`} className="z-[1]" client:visible>
-    Saber más
-  </LinkButton>
+  <ServiceButton href={`/servicios/${slug}`} />
 </article>

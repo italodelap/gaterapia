@@ -9,8 +9,9 @@ const { href, label } = Astro.props;
 
 <a
   href={href}
+  title={label}
   aria-labelledby={label}
-  class="group grid place-items-center transition-all duration-500 px-3 py-3"
+  class="group sm:px-4 sm:py-3 flex items-center justify-center gap-2 font-medium transition-all duration-500"
 >
   <span id={label} class="hidden">{label}</span>
   <slot />

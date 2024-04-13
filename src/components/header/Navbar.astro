@@ -1,6 +1,7 @@
 ---
 import NavbarLink from "./NavbarLink.astro";
 
+import LinksIcon from "@/icons/LinksIcon.astro";
 import EmailIcon from "@/icons/EmailIcon.astro";
 import FacebookLogo from "@/icons/FacebookLogo.astro";
 import InstagramLogo from "@/icons/InstagramLogo.astro";
@@ -24,7 +25,7 @@ const SOCIAL_LINKS = [
 ];
 ---
 
-<nav class="flex">
+<nav class="flex gap-4 sm:gap-0 justify-center items-center">
   {
     SOCIAL_LINKS.map(({ label, href, Icon }) => (
       <NavbarLink label={label} href={href}>
@@ -32,6 +33,17 @@ const SOCIAL_LINKS = [
       </NavbarLink>
     ))
   }
+
+  <span class="bg-white w-[1px] h-5 sm:mx-3 pointer-events-none select-none"
+    >&nbsp;</span
+  >
+
+  <NavbarLink label="Links" href="/links">
+    <LinksIcon
+      class="size-5 transition-all group-hover:drop-shadow-[0px_0px_3px_#FFFFFF]"
+    />
+    <span class="h-5 grid place-items-center">LINKS</span>
+  </NavbarLink>
 </nav>
 <div
   id="navbar-backdrop"

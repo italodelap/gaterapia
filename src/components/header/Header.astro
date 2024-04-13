@@ -1,7 +1,5 @@
 ---
 import Navbar from "./Navbar.astro";
-
-import { LinksButton } from "./LinksButton";
 ---
 
 <header class="w-full sticky top-0 z-50 p-4">
@@ -23,7 +21,6 @@ import { LinksButton } from "./LinksButton";
 
     <div class="flex items-center gap-3 text-white">
       <Navbar />
-      <LinksButton className="hidden min-[350px]:flex" client:visible />
     </div>
   </div>
 </header>
