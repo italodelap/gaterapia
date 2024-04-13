@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  Gaterapia's website built with Astro, Tailwind and NextUI ⚛️
+  Gaterapia's website built with Astro and Tailwind ⚛️
 </p>
 
 ## ⚡ Commands
@@ -23,7 +23,6 @@ All commands are run from the root of the project, from a terminal:
 
 - [Astro](https://astro.build/)
 - [TypeScript](https://www.typescriptlang.org)
-- [NextUI](https://nextui.org/) + [Framer Motion](https://www.framer.com/motion/)
 - [React integration](https://docs.astro.build/en/guides/integrations-guide/react/) for Astro
 - [Tailwind integration](https://docs.astro.build/en/guides/integrations-guide/tailwind/) for Astro
 - [ESLint](https://eslint.org) and [Prettier](https://prettier.io) already configured with the [Codely's configuration](https://github.com/CodelyTV/eslint-config-codely)

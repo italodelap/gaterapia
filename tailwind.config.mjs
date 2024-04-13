@@ -1,12 +1,8 @@
-import { nextui } from "@nextui-org/react";
 import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: [
-		"./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
-		"./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-	],
+	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
 	theme: {
 		extend: {
 			colors: {
@@ -27,6 +23,5 @@ export default {
 			sans: ["Caveat Brush", ...defaultTheme.fontFamily.sans],
 		},
 	},
-	darkMode: "class",
-	plugins: [nextui(), require("@tailwindcss/typography")],
+	plugins: [require("@tailwindcss/typography")],
 };
