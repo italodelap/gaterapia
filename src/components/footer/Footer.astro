@@ -1,4 +1,7 @@
 ---
+import Copyright from "./Copyright.astro";
+import MadeBy from "./MadeBy.astro";
+
 interface Props {
   class?: string;
 }
@@ -19,22 +22,7 @@ const { class: className } = Astro.props;
       flex gap-4 flex-col items-center justify-center md:flex-row md:justify-between
     `}
   >
-    <div class="flex flex-col md:flex-row">
-      <small class="text-center text-balance">© 2024 Gaterapia.&nbsp;</small>
-      <small class="text-center text-balance -mt-2 md:mt-0">
-        Todos los derechos reservados.
-      </small>
-    </div>
-    <small class="text-center text-balance">
-      Made with ❤️ by
-      <a
-        target="_blank"
-        class="underline"
-        rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/italodelap/"
-      >
-        @italodelap
-      </a>
-    </small>
+    <Copyright />
+    <MadeBy />
   </div>
 </footer>

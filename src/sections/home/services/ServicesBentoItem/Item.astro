@@ -1,0 +1,37 @@
+---
+import ItemBackground from "./ItemBackground.astro";
+import ItemButton from "./ItemButton.astro";
+import ItemButtonContainer from "./ItemButtonContainer.astro";
+import ItemTitle from "./ItemTitle.astro";
+import ItemTitleContainer from "./ItemTitleContainer.astro";
+
+interface Props {
+  class?: string;
+  slug: string;
+  subtitle?: string;
+  title: string;
+}
+
+const { class: className, slug, title, subtitle } = Astro.props;
+---
+
+<article
+  class={`
+    rounded-3xl border border-black/10
+    group relative text-white overflow-hidden
+    flex flex-col items-center gap-2 justify-between
+    col-span-12 min-[375px]:col-span-6 sm:col-span-4
+    ${className ?? ""}
+  `}
+>
+  <ItemBackground
+    source={`/services/${slug}.webp`}
+    altText={`Foto del servicio de '${title}${subtitle ? ` ${subtitle}` : ""}'`}
+  />
+  <ItemTitleContainer>
+    <ItemTitle title={title} subtitle={subtitle} />
+  </ItemTitleContainer>
+  <ItemButtonContainer>
+    <ItemButton href={`/servicios/${slug}`} />
+  </ItemButtonContainer>
+</article>

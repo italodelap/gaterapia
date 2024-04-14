@@ -1,0 +1,19 @@
+---
+interface Props {
+  source: string;
+  altText: string;
+}
+
+const { source, altText } = Astro.props;
+---
+
+<img
+  src={source}
+  alt={altText}
+  class={`
+    w-full h-full object-cover
+    absolute inset-0 opacity-60
+    pointer-events-none select-none
+    transition-all group-hover:scale-110
+  `}
+/>
