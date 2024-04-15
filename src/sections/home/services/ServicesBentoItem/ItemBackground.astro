@@ -16,7 +16,6 @@ const { slug, altText } = Astro.props;
   loading="eager"
   decoding="async"
   src={`/services/${slug}.webp`}
-  transition:name={`${slug}_image`}
   class={`
     aspect-[4/5]
     w-full h-full object-cover

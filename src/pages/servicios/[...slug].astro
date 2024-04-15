@@ -35,9 +35,8 @@ const { title, subtitle } = service.data;
         height="320"
         loading="eager"
         src={`/services/${slug}.webp`}
-        transition:name={`${slug}_image`}
         alt={`Foto ilustrativa del servicio de ${title}`}
-        class="service-image mx-auto size-80 md:size-[600px]"
+        class="mx-auto rounded-2xl size-80 md:size-[500px]"
       />
     </section>
     <section class="prose prose-invert">
@@ -45,19 +44,3 @@ const { title, subtitle } = service.data;
     </section>
   </main>
 </Layout>
-
-<style>
-  .service-image {
-    mask: linear-gradient(
-        to top,
-        transparent 10%,
-        #fff 15% 90%,
-        transparent 95%
-      ),
-      linear-gradient(to left, transparent 10%, #fff 15% 90%, transparent 95%);
-    mask-size: 110% 110%;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-composite: intersect;
-  }
-</style>
