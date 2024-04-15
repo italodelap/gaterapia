@@ -1,3 +1,7 @@
+---
+import { Image } from "astro:assets";
+---
+
 <div
   class="flex flex-col gap-4 text-base min-[400px]:text-lg lg:text-xl font-medium text-pretty"
 >
@@ -11,7 +15,10 @@
   <p>
     Espero poder ayudarte
     <span class="inline-block align-bottom">
-      <img
+      <Image
+        width="24"
+        height="24"
+        loading="eager"
         src="/hero/hugging_face-emoji.webp"
         class="size-6 pointer-events-none select-none"
         alt="Emoji de una carita con los brazos abiertos, como si abrazara"

@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 interface Props {
   source: string;
   altText: string;
@@ -7,10 +9,15 @@ interface Props {
 const { source, altText } = Astro.props;
 ---
 
-<img
+<Image
+  width="160"
+  height="220"
   src={source}
   alt={altText}
+  loading="eager"
+  decoding="async"
   class={`
+    aspect-[4/5]
     w-full h-full object-cover
     absolute inset-0 opacity-60
     pointer-events-none select-none

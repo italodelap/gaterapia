@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 import LinksLayout from "@/layouts/LinksLayout.astro";
 
 import SocialNetworks from "@/sections/links/SocialNetworks.astro";
@@ -16,8 +18,10 @@ const links = await api.links.getAll();
         flex flex-col gap-3 justify-center items-center
       `}
     >
-      <img
-        class="w-[14.5rem]"
+      <Image
+        width="232"
+        height="232"
+        loading="eager"
         src="/gaterapia-logo.png"
         alt="Logotipo de Gaterapia"
       />

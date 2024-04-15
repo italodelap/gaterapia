@@ -1,10 +1,16 @@
 ---
+import { Image } from "astro:assets";
+
 import Hello from "./hello/Hello.astro";
 import HeroBento from "./HeroBento.astro";
 import HeroBentoItem from "./HeroBentoItem.astro";
 ---
 
-<img
+<Image
+  width="240"
+  height="84"
+  loading="eager"
+  decoding="async"
   src="/gaterapia-logo.png"
   alt="Logotipo de Gaterapia"
   class="block md:hidden w-60 mx-auto mt-4 pb-6 pointer-events-none select-none"
@@ -12,10 +18,14 @@ import HeroBentoItem from "./HeroBentoItem.astro";
 <HeroBento>
   <Hello class="hidden sm:flex" />
   <HeroBentoItem class="grid place-items-center">
-    <img
-      class="h-full"
+    <Image
+      width="600"
+      height="300"
+      loading="eager"
+      decoding="async"
+      class="h-full w-full"
+      alt="Foto de Juli y Dalí"
       src="/hero/hero-photo.webp"
-      alt="Foto de Juli, Smoking y Brisa"
     />
   </HeroBentoItem>
   <Hello class="flex sm:hidden" />

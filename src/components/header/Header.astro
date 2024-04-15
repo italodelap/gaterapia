@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 import Navbar from "./Navbar.astro";
 ---
 
@@ -11,10 +13,13 @@ import Navbar from "./Navbar.astro";
         class="rounded-full transition-all hover:shadow-lg hover:scale-125"
       >
         <span id="logo-link-label" class="hidden">Volver al inicio</span>
-        <img
+        <Image
+          width="48"
+          height="48"
+          loading="eager"
           alt="Isotipo de Gaterapia"
           src="/gaterapia-isotype.webp"
-          class="size-12 pointer-events-none select-none"
+          class="pointer-events-none select-none"
         />
       </a>
     </div>

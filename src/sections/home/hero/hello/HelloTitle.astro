@@ -1,5 +1,12 @@
+---
+import { Image } from "astro:assets";
+---
+
 <div class="flex items-center gap-2 min-[400px]:gap-4">
-  <img
+  <Image
+    width="48"
+    height="48"
+    loading="eager"
     alt="Avatar de Juli"
     src="/hero/hero-avatar-photo.webp"
     class="rounded-full size-12 lg:size-16 hover:scale-125 transition-all pointer-events-none select-none"
@@ -7,7 +14,10 @@
   <h2 class="text-base font-bold min-[400px]:text-xl lg:text-2xl">
     Hola! Soy Juli
     <span class="inline-block align-bottom">
-      <img
+      <Image
+        width="28"
+        height="28"
+        loading="eager"
         src="/hero/woman_raising_hand-emoji.webp"
         alt="Emoji de una mujer levantando la mano"
         class="size-7 min-[400px]:size-8 lg:size-9 pointer-events-none select-none"
