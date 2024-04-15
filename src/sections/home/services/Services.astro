@@ -8,5 +8,9 @@ const services = await getFormattedServices();
 ---
 
 <ServicesBento>
-  {services.map((service) => <BentoItem {...service} />)}
+  {
+    services.map((service, index) => (
+      <BentoItem {...service} lazy={index > 2} />
+    ))
+  }
 </ServicesBento>

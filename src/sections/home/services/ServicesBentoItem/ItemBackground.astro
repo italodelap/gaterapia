@@ -2,20 +2,20 @@
 import { Image } from "astro:assets";
 
 interface Props {
-  slug: string;
   altText: string;
+  lazy: boolean;
+  slug: string;
 }
 
-const { slug, altText } = Astro.props;
+const { altText, lazy, slug } = Astro.props;
 ---
 
 <Image
   width="160"
   height="220"
   alt={altText}
-  loading="eager"
-  decoding="async"
   src={`/services/${slug}.webp`}
+  loading={lazy ? "lazy" : "eager"}
   class={`
     aspect-[4/5]
     w-full h-full object-cover
