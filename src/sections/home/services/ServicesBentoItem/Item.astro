@@ -25,7 +25,7 @@ const { class: className, slug, title, subtitle } = Astro.props;
   `}
 >
   <ItemBackground
-    source={`/services/${slug}.webp`}
+    slug={slug}
     altText={`Foto del servicio de '${title}${subtitle ? ` ${subtitle}` : ""}'`}
   />
   <ItemTitleContainer>

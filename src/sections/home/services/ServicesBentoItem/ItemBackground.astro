@@ -2,20 +2,21 @@
 import { Image } from "astro:assets";
 
 interface Props {
-  source: string;
+  slug: string;
   altText: string;
 }
 
-const { source, altText } = Astro.props;
+const { slug, altText } = Astro.props;
 ---
 
 <Image
   width="160"
   height="220"
-  src={source}
   alt={altText}
   loading="eager"
   decoding="async"
+  src={`/services/${slug}.webp`}
+  transition:name={`${slug}_image`}
   class={`
     aspect-[4/5]
     w-full h-full object-cover
