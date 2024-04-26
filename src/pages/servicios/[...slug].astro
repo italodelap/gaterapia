@@ -1,10 +1,12 @@
 ---
 import type { GetStaticPaths } from "astro";
 
-import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
+import ServiceAside from "@/sections/servicios/ServiceAside.astro";
+import ServiceHeading from "@/sections/servicios/ServiceHeading.astro";
+import ServiceContentContainer from "@/sections/servicios/ServiceContentContainer.astro";
 
 export const getStaticPaths = (async () => {
   const services = await getCollection("services");
@@ -22,25 +24,28 @@ const { title, subtitle } = service.data;
 ---
 
 <Layout title={`${title} | Gaterapia`}>
-  <main class="w-full px-4 grid gap-10 sm:gap-4">
-    <section class="grid gap-10 sm:gap-4">
-      <div class="text-white text-center">
-        <h1 class="font-['Caveat_Brush'] text-5xl">
-          {title}
-        </h1>
-        {subtitle && <h2 class="text-2xl">{subtitle}</h2>}
-      </div>
-      <Image
-        width="320"
-        height="320"
-        loading="eager"
-        src={`/services/${slug}.webp`}
-        alt={`Foto ilustrativa del servicio de ${title}`}
-        class="mx-auto rounded-2xl size-80 md:size-[500px]"
-      />
-    </section>
-    <section class="prose prose-invert">
+  <div
+    class={`
+      min-h-screen mx-auto md:max-w-6xl
+      service-layout grid justify-center gap-3 lg:gap-8
+    `}
+  >
+    <ServiceHeading />
+    <ServiceAside slug={slug} title={title} />
+    <ServiceContentContainer>
       <Content />
-    </section>
-  </main>
+    </ServiceContentContainer>
+  </div>
 </Layout>
+
+<style>
+  @media (min-width: 1024px) {
+    .service-layout {
+      grid-template-areas:
+        "heading heading"
+        "aside main";
+      grid-template-rows: auto 1fr;
+      grid-template-columns: 30rem 1fr;
+    }
+  }
+</style>

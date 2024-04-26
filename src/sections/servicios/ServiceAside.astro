@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  slug: string;
+  title: string;
+}
+
+const { slug, title } = Astro.props;
+---
+
+<aside
+  class="px-4 lg:px-0 lg:[grid-area:aside] lg:grid lg:place-content-start lg:relative"
+>
+  <div class="grid gap-8 lg:sticky lg:top-24">
+    <h1
+      class="font-['Caveat_Brush'] text-white text-center text-4xl lg:text-5xl"
+    >
+      {title}
+    </h1>
+    <Image
+      width="320"
+      height="320"
+      loading="eager"
+      src={`/services/${slug}.webp`}
+      alt={`Foto ilustrativa del servicio de "${title}"`}
+      class="mx-auto rounded-3xl drop-shadow-md size-full sm:size-80 md:size-96 lg:size-full"
+    />
+  </div>
+</aside>

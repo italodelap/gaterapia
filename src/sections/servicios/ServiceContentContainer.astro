@@ -1,0 +1,23 @@
+---
+const PROSE_STYLES = {
+  generic: "prose prose-invert md:prose-md lg:prose-lg xl:prose-xl",
+  strong: "prose-strong:font-bold",
+  li: "prose-li:marker:text-white",
+  imgBasic: "prose-img:mx-auto prose-img:rounded-full",
+  imgSize: "prose-img:size-full sm:prose-img:size-80 lg:prose-img:size-[27rem]",
+};
+---
+
+<main
+  class:list={[
+    "text-neutral-200 font-medium text-pretty",
+    "px-4 mb-4 mt-4 lg:px-0 lg:mb-0 lg:mt-0 lg:[grid-area:main]",
+    PROSE_STYLES.generic,
+    PROSE_STYLES.strong,
+    PROSE_STYLES.li,
+    PROSE_STYLES.imgBasic,
+    PROSE_STYLES.imgSize,
+  ]}
+>
+  <slot />
+</main>
