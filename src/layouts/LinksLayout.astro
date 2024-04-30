@@ -7,6 +7,7 @@ import { ViewTransitions } from "astro:transitions";
 import "@/assets/styles/global.css";
 
 import Background from "@/components/Background.astro";
+import BackToGaterapiaButton from "@/components/back-to-gaterapia-button/BackToGaterapiaButton.astro";
 import Footer from "@/components/footer/Footer.astro";
 
 import { getServicesDescriptionForSeo } from "@/lib/data";
@@ -32,7 +33,12 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Background />
+		<header class="w-full">
+			<div class="mx-auto mt-4 w-full max-w-6xl p-8 flex items-center">
+				<BackToGaterapiaButton />
+			</div>
+		</header>
 		<slot />
-		<Footer class="pt-4" />
+		<Footer class="px-8 pb-8" />
 	</body>
 </html>

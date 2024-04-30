@@ -1,17 +1,7 @@
 ---
-import ArrowIcon from "@/assets/icons/ArrowIcon.astro";
+import BackToGaterapiaButton from "@/components/back-to-gaterapia-button/BackToGaterapiaButton.astro";
 ---
 
 <div class="px-4 lg:px-0 lg:[grid-area:heading] lg:mt-4">
-  <a
-    href="/"
-    class={`
-      inline-flex items-center gap-2
-      transition-colors duration-300
-      font-medium text-neutral-300 hover:text-white
-    `}
-  >
-    <ArrowIcon class="size-6 rotate-180" />
-    Volver a <span class="font-semibold">gaterapia.com</span>
-  </a>
+  <BackToGaterapiaButton />
 </div>
