@@ -1,4 +1,3 @@
 ---
-title: "Terapia floral"
-subtitle: "(personas)"
+title: "Terapia floral para personas"
 ---

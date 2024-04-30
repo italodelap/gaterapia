@@ -1,10 +1,9 @@
 ---
 interface Props {
-  subtitle?: string;
   title: string;
 }
 
-const { subtitle, title } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <h4
@@ -15,10 +14,3 @@ const { subtitle, title } = Astro.props;
 >
   {title}
 </h4>
-{
-  subtitle && (
-    <small class="z-[1] text-sm min-[500px]:text-lg md:text-xl font-medium">
-      {subtitle}
-    </small>
-  )
-}

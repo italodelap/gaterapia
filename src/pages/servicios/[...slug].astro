@@ -20,7 +20,7 @@ const service = Astro.props;
 const { Content } = await service.render();
 
 const { slug } = service;
-const { title, subtitle } = service.data;
+const { title } = service.data;
 ---
 
 <Layout title={`${title} | Gaterapia`}>

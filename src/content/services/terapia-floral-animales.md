@@ -1,4 +1,3 @@
 ---
-title: "Terapia floral"
-subtitle: "(animales)"
+title: "Terapia floral para animales"
 ---
