@@ -18,7 +18,7 @@ Podés saber **todo lo que quieras** de tu animal, **de esta vida y del presente
 
 ### ¿Cómo se realiza una sesión y cómo la solicito? 🗓️
 
-Primero, **me contactás** y me hacés saber que querés una sesión. Luego, **se te asignará un turno** y vas a poder enviarnme, **vía e-mail, tus preguntas y la foto del animal**. Una vez finalizada la sesión, **te respondo el e-mail** con todo lo que me haya comunicado tu animalito y, **por último, te envío un audio de WhatsApp** explicándote detalles significativos de la sesión ❤
+Primero, **me contactás** y me hacés saber que querés una sesión. Luego, **se te asignará un turno** y vas a poder enviarme, **vía e-mail, tus preguntas y la foto del animal**. Una vez finalizada la sesión, **te respondo el e-mail** con todo lo que me haya comunicado tu animalito y, **por último, te envío un audio de WhatsApp** explicándote detalles significativos de la sesión ❤
 
 ### Consideraciones importantes ☝️
 
