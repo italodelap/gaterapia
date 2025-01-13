@@ -36,4 +36,4 @@ Tener en cuenta que cada vez que se abre un registro akáshico se producen movim
 
 ### ¿Cómo te comparto tus registros? 📲
 
-Los registros, una vez que los realizo, **se los transmito por audio** y les cuento todo lo que sentí. **Después, los transcribo y se los envío por mail** para que les quede por escrito y para leerlo las veces que quieran ✍️ Así que, si se animan y quieren, les envio toda la información y agendamos un día para ustedes ❤️
+Los registros, una vez que los realizo, **se los transmito por audio** y les cuento todo lo que sentí. **Después, se los envío por mail** para que les quede por escrito y para leerlo las veces que quieran ✍️ Así que, si se animan y quieren, les envio toda la información y agendamos un día para ustedes ❤️

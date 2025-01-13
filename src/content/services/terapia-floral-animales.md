@@ -22,8 +22,6 @@ La terapia floral **es de gran ayuda para complementar con ejercicios de asesora
 
 ### ¿En qué consiste una sesión de terapia floral y cómo la solicito? 🗓️
 
-La sesión de terapia floral cuenta con **2 modalidades**. Por un lado, si querés una **sesión más personalizada**, contás con la posibilidad de que hagamos una **videollamada**. De lo contrario, podemos hacer una **sesión muchísimo más corta** que sería **a través de WhatsApp (chat)**.
+La sesión de terapia floral sería **a través de WhatsApp (chat)**. Y la idea es **charlar acerca de cuáles son los principales temas a tratar**, proponer **posibles soluciones** e ir formulando su **tratamiento** 📝
 
-Tanto vía chat como vía videollamada, la idea es **charlar acerca de cuáles son los principales temas a tratar**, proponer **posibles soluciones** e ir formulando su **tratamiento**.
-
-También, contamos con **fórmulas generales** que van a ayudar con los síntomas de estrés, ansiedad, miedo, pánico, entre otros.
+También, contamos con **fórmulas generales** que van a ayudar con los síntomas de estrés, ansiedad, miedo, pánico, entre otros ☺️

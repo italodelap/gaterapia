@@ -31,4 +31,4 @@ Tu gato va a estar cuidado por una persona **capacitada** y que tiene el **conoc
 
 Las visitas pueden ser de **1 hora**, **1 hora y media** o **2 horas** según tu preferencia 🗓️ Si tu gatito come BARF podemos ir 2 veces por día según tu ubicación.
 
-Sabemos que llegaste hasta acá porque **te interesa no sólo irte tranquilo/a de vacas, sino que tu gato disfrute durante tu ausencia**, así que te dejamos nuestro contacto para que puedas avanzar con tu reserva ❤️
+Sabemos que llegaste hasta acá porque **te interesa no sólo irte tranquilo/a de vacas, sino que tu gato disfrute durante tu ausencia**, así que te dejamos [nuestro contacto](mailto:gaterapia.catsitters@gmail.com) para que puedas avanzar con tu reserva ❤️

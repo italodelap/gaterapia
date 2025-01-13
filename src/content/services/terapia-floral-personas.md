@@ -16,8 +16,8 @@ Si al mismo tiempo que vos, **tu compañero peludo (gato/perro)**, también est�
 
 ### ¿En qué consiste una sesión de terapia floral y cómo la solicito? 🗓️
 
-La sesión de terapia floral se realiza por videollamada, en la cual **charlamos acerca de cuáles son los principales temas a tratar**, proponemos **posibles soluciones** y vamos formulando su **tratamiento** 🤓
+La sesión de terapia floral se realiza **a través de WhatsApp (chat)** y **charlamos acerca de cuáles son los principales temas a tratar**, proponemos **posibles soluciones** y vamos formulando su **tratamiento** 🤓
 
-También, contamos con **fórmulas generales** que van a ayudar con los síntomas de estrés, ansiedad, miedo, pánico, entre otros.
+También, contamos con **fórmulas generales** que van a ayudar con los síntomas de estrés, ansiedad, miedo, pánico, entre otros ☺️
 
 Si te interesa tener una sesión (ya sea que lo quieras hacer en conjunto con tu compañero animal o solo/a), te voy a brindar toda la información que necesites. Desde ya, en Gaterapia trabajamos con **4 sistemas florales**: **Bach**, **California**, **Saint Germain** y **Bush** ☝️
