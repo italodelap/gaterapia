@@ -4,7 +4,11 @@ title: "Registros akáshicos"
 
 Los Registros Akáshicos **son los libros de la vida, los archivos del viaje del alma a través del espacio/tiempo material e inmaterial**. Son **archivos que guardan las experiencias del alma** (acontecimientos del pasado, presente y futuro) 📚
 
-**Contienen información de todo aquello que tenga masa o energía** (personas, animales, edificios, países, monumentos, etcétera). La lectura se basa en el desarrollo espiritual, concediendo la energía necesaria para lograr recibir información de planos de conciencia más elevados ✨
+¿Te imaginás poder acceder al **libro de tu alma**? Saber por qué repetís ciertos patrones, por qué te cuesta soltar algo o qué aprendizajes traés de otras vidas... Eso es lo que hacen los Registros Akáshicos: **te ayudan a recordar lo que tu alma ya sabe, pero olvidaste**. Es como abrir una conversación con tu ser más profundo ✨
+
+Los Registros Akáshicos son las **memorias de tu alma a través del tiempo**. Podés imaginarlos como una gran biblioteca o archivo energético donde se guarda información sobre **quién sos, de dónde venís, qué aprendizajes traés y hacia dónde podrías ir** 📖 Es una herramienta de conexión profunda con vos misma/o.
+
+Cuando abrís tus Registros, podés recibir **guía, claridad y respuestas**. En la lectura, los maestros y guías muestran lo que hoy necesitás saber, teniendo en cuenta experiencias de esta vida y de otras, memorias dolorosas y también aprendizajes valiosos. Esto puede ayudarte a **entender por qué estás viviendo ciertas situaciones, liberar bloqueos, sanar memorias y tomar decisiones con más claridad** 💫
 
 ### ¿Cómo se abren los registros? 📖
 
