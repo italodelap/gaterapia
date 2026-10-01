@@ -19,5 +19,10 @@
 html, body { min-height: 100vh; }
 html {
 	font-family: "Montserrat Variable", system-ui, sans-serif;
-	background-color: var(--color-cerise-red-600);
+	background-color: var(--color-neutral-800);
+	background-image: linear-gradient(
+		to top left in oklab,
+		var(--color-neutral-800),
+		var(--color-cerise-red-600)
+	);
 }
