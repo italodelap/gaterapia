@@ -1,5 +1,6 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
+import Analytics from "@vercel/analytics/astro";
 
 import { getServicesDescriptionForSeo } from "@/lib/data";
 
@@ -68,5 +69,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <!-- <meta name="twitter:site" content="@gaterapia" /> -->
   <!-- <meta name="twitter:creator" content="@gaterapia" /> -->
 
-  <ViewTransitions />
+  <Analytics />
+  <ClientRouter />
 </head>

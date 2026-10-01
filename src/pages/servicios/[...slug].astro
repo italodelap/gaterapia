@@ -1,7 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
 import ServiceAside from "@/sections/servicios/ServiceAside.astro";
@@ -11,15 +11,15 @@ import ServiceContentContainer from "@/sections/servicios/ServiceContentContaine
 export const getStaticPaths = (async () => {
   const services = await getCollection("services");
   return services.map((service) => ({
-    params: { slug: service.slug },
+    params: { slug: service.id },
     props: service,
   }));
 }) satisfies GetStaticPaths;
 
 const service = Astro.props;
-const { Content } = await service.render();
+const { Content } = await render(service);
 
-const { slug } = service;
+const { id: slug } = service;
 const { title } = service.data;
 ---
 
