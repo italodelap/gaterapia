@@ -45,7 +45,15 @@ ESLint is configured through `eslint-config-codely/typescript`, but no lint scri
 
 ## Testing Guidelines
 
-No test framework or coverage threshold is configured. For changes, run `pnpm run build` and manually inspect affected pages in `pnpm dev`. For content updates, verify frontmatter against `src/content.config.ts` and check `/servicios/<slug>`.
+No test framework or coverage threshold is configured. For changes, run `pnpm run build` and manually inspect affected pages in `pnpm dev`. For content updates, verify frontmatter against `src/content.config.ts` and check `/servicios/<slug>`. CI runs `pnpm run build` on every PR.
+
+## Git Workflow
+
+This project follows **git-flow**: `main` is production and `dev` is the pre-production environment where the client reviews changes before they go live. Short-lived branches (`feat/x`, `fix/x`, `chore/x`, `ci/x`, `docs/x`) branch off `dev` and merge back into `dev` via PR; `dev` is promoted to `main` via PR.
+
+- **Branch protection** (`main` and `dev`): PR required to merge, the `build` status check must pass, force-pushes and deletion are disabled.
+- **CI** (`.github/workflows/ci.yml`): runs `pnpm build` on every PR and push targeting `main` or `dev`.
+- **Deploys**: Vercel auto-deploys `main` to production and `dev` to the pre-production URL, and creates a preview per branch/PR.
 
 ## Commit & Pull Request Guidelines
 
