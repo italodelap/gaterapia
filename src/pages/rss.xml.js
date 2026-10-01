@@ -11,7 +11,7 @@ export async function GET(context) {
 		items: services.map((service) => ({
 			...service.data,
 			pubDate: new Date(),
-			link: `/servicios/${service.slug}`,
+			link: `/servicios/${service.id}`,
 		})),
 	});
 }

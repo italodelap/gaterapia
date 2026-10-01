@@ -23,5 +23,5 @@ export function getServicesDescriptionForSeo(): string {
 export async function getFormattedServices(): Promise<FormattedService[]> {
 	const services = await getCollection("services");
 
-	return services.map(({ slug, data }) => ({ slug, ...data }));
+	return services.map(({ id, data }) => ({ slug: id, ...data }));
 }
