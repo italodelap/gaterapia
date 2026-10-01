@@ -37,7 +37,7 @@ The links on `/info-util` are fetched at build time from a published Google Shee
 ## 🚀 Deploy & CI
 
 - Static site deployed on Vercel: `main` is production and `dev` is the pre-production environment.
-- GitHub Actions runs `pnpm build` on every PR and push to `main` and `dev`.
+- GitHub Actions runs `pnpm test` and `pnpm build` on every PR and push to `main` and `dev`.
 
 ## 🌈 Tech Stack
 
