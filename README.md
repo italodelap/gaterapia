@@ -21,7 +21,7 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm dev`       | Starts local dev server at `localhost:4321`         |
 | `pnpm build`     | Type-checks (`astro check`) and builds to `./dist/` |
 | `pnpm preview`   | Previews the production build locally               |
-| `pnpm test`      | Runs the unit tests (`node --test`)                 |
+| `pnpm test`      | Runs the unit tests once with Vitest                |
 | `pnpm astro ...` | Runs Astro CLI commands, like `astro check`         |
 
 ## 🗂️ Structure
