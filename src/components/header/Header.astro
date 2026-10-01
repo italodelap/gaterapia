@@ -32,7 +32,9 @@ import Navbar from "./Navbar.astro";
 
 <style>
   header {
-    animation: blur linear both;
+    animation-name: blur;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
     animation-timeline: scroll();
     animation-range: 0 500px;
   }
