@@ -1,2 +1,20 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@custom-variant hover (&:hover);
+
+@theme {
+	--color-cerise-red-50: #fdf2f7;
+	--color-cerise-red-100: #fce7f1;
+	--color-cerise-red-200: #fccee3;
+	--color-cerise-red-300: #fba6cb;
+	--color-cerise-red-400: #f76fa8;
+	--color-cerise-red-500: #f04487;
+	--color-cerise-red-600: #e1306c;
+	--color-cerise-red-700: #c2144a;
+	--color-cerise-red-800: #a0143d;
+	--color-cerise-red-900: #851637;
+	--color-cerise-red-950: #52051c;
+}
+
 html, body { min-height: 100vh; }
 html { font-family: "Montserrat Variable", system-ui, sans-serif; }
