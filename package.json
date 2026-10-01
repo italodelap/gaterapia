@@ -10,6 +10,7 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "test": "node --test src/lib/csv.test.ts",
     "astro": "astro"
   },
   "dependencies": {
