@@ -17,4 +17,7 @@
 }
 
 html, body { min-height: 100vh; }
-html { font-family: "Montserrat Variable", system-ui, sans-serif; }
+html {
+	font-family: "Montserrat Variable", system-ui, sans-serif;
+	background-color: var(--color-cerise-red-600);
+}
