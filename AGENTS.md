@@ -9,11 +9,12 @@ This is an Astro 7 static site styled with Tailwind CSS v4. Route files live in 
 - `pnpm dev`: run the Astro dev server at `localhost:4321`.
 - `pnpm run build`: run `astro check` and build the production site to `dist/`.
 - `pnpm run preview`: serve the built site locally for final verification.
+- `pnpm test`: run the unit tests once with Vitest (`vitest run`); `pnpm run test:watch` runs them in watch mode.
 - `pnpm run astro -- check`: run Astro diagnostics without producing a build.
 
 Requirements: Node `>=22.12.0` and pnpm `11.22.0` (pinned via `packageManager`; run `corepack enable`).
 
-There is no dedicated test script currently; use `pnpm run build` as the primary validation command.
+Use `pnpm run build` (type-check + build) and `pnpm test` as the primary validation commands.
 
 ### Background dev server (AI agents)
 
@@ -45,7 +46,9 @@ ESLint is configured through `eslint-config-codely/typescript`, but no lint scri
 
 ## Testing Guidelines
 
-No test framework or coverage threshold is configured. For changes, run `pnpm run build` and manually inspect affected pages in `pnpm dev`. For content updates, verify frontmatter against `src/content.config.ts` and check `/servicios/<slug>`. CI runs `pnpm run build` on every PR.
+Unit tests use [Vitest](https://docs.astro.build/en/guides/testing/), configured in `vitest.config.ts` through Astro's `getViteConfig()` so tests see the same Vite setup as the site. Test files live next to the code as `src/**/*.test.ts` (for example `src/lib/csv.test.ts`), import from `vitest` (`describe`, `it`, `expect`) and import the module under test without a file extension. They are excluded from the `astro check` type-check through `tsconfig.json`. No coverage threshold is configured.
+
+For changes, run `pnpm run build` and `pnpm test`, and manually inspect affected pages in `pnpm dev`. Add or update a unit test when changing logic in `src/lib`. For content updates, verify frontmatter against `src/content.config.ts` and check `/servicios/<slug>`. CI runs `pnpm run build` on every PR.
 
 ## Git Workflow
 
