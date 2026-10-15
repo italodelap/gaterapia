@@ -1,13 +1,12 @@
 ---
 import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 
 import LinksLayout from "@/layouts/LinksLayout.astro";
 
 import SocialNetworks from "@/sections/links/SocialNetworks.astro";
 
-import { api } from "@/lib/api";
-
-const links = await api.links.getAll();
+const links = (await getCollection("links")).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <LinksLayout title="Links de Gaterapia">
@@ -29,9 +28,9 @@ const links = await api.links.getAll();
     </section>
     <section class="w-full max-w-[635px] mx-auto flex flex-col gap-4">
       {
-        links.map((link) => (
+        links.map(({ data }) => (
           <a
-            href={link.url}
+            href={data.url}
             target="_blank"
             rel="noopener noreferrer"
             class={`
@@ -41,7 +40,7 @@ const links = await api.links.getAll();
               transition-all hover:bg-white/10 hover:shadow-lg hover:shadow-neutral-300
             `}
           >
-            {link.link}
+            {data.link}
           </a>
         ))
       }
